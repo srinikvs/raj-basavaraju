@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Raj Basavaraju">
+  <rect width="32" height="32" rx="8" fill="#15202B"/>
+  <!-- Geometric key: bow + shaft + two bits. Filled shapes stay crisp at 16px. -->
+  <circle cx="16" cy="12" r="5.15" fill="none" stroke="#E7EAEF" stroke-width="2.35"/>
+  <circle cx="16" cy="12" r="1.7" fill="#0D6E6A"/>
+  <path d="M16 17.1v8.2" fill="none" stroke="#E7EAEF" stroke-width="2.35" stroke-linecap="round"/>
+  <path d="M16 21.35h6.1" fill="none" stroke="#E7EAEF" stroke-width="2.35" stroke-linecap="round"/>
+  <path d="M16 25.3h4.05" fill="none" stroke="#E7EAEF" stroke-width="2.35" stroke-linecap="round"/>
+</svg>

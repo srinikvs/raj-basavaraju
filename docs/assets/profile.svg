@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="RB">
+  <rect width="128" height="128" rx="64" fill="#15202B"/>
+  <text
+    x="64"
+    y="76"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="42"
+    font-weight="600"
+    fill="#F4F7F7"
+  >RB</text>
+</svg>

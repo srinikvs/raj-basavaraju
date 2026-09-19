@@ -28,7 +28,7 @@ export const PROFILE = {
   email: "cy.rs@yahoo.com",
   phone: "+1-716-471-7777",
   linkedin: "https://www.linkedin.com/in/raj-iam-etl-dwh",
-  photoCandidates: ["/assets/profile.svg"],
+  photoCandidates: [`${import.meta.env.BASE_URL}assets/profile.svg`],
   tags: ["SailPoint ISC", "IdentityNow certification", "8+ source integrations", "SAFe POPM"],
 } as const;
 

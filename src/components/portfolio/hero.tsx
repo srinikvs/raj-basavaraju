@@ -7,7 +7,6 @@ export function Hero({
   onResume,
 }: {
   onResume: () => void;
-  onContact: () => void;
 }) {
   return (
     <Surface as="header" id="top" className="px-6 py-7 sm:px-8">

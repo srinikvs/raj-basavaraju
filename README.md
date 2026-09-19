@@ -1,14 +1,31 @@
 # Rajashekara Basavaraju — identity portfolio
 
-Static personal portfolio for Raj (IAM / SailPoint ISC specialist, Atlanta, GA).
+Static GitHub Pages site for Raj (IAM / SailPoint ISC specialist, Atlanta, GA).
+
+Live URL: [https://srinikvs.github.io/raj-basavaraju/](https://srinikvs.github.io/raj-basavaraju/)
 
 Repo: [srinikvs/raj-basavaraju](https://github.com/srinikvs/raj-basavaraju)
 
-Claims on this site are limited to resume-verified facts. Missing titles, dates, bullets, story bodies, metric context, and the source list render as **Resume content pending / FROM RESUME**.
+This is a client-only Vite + React build. There is no server, Vercel preset, or SSR. Built files live in `docs/` and are the GitHub Pages site.
+
+## Enable GitHub Pages
+
+1. Open the repo on GitHub → **Settings** → **Pages**.
+2. Under **Build and deployment**:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main`
+   - **Folder:** `/docs`
+3. Save. The site publishes at `https://srinikvs.github.io/raj-basavaraju/`.
+
+Vite `base` is `/raj-basavaraju/` so asset URLs match that project Pages path.
+
+Later this can move to Raj’s own user site (`username.github.io`) by changing `base` to `/` and deploying from that repo’s root (or `/docs`).
 
 ## Resume content (follow-up input)
 
-A later resume paste is a follow-up input. It **replaces only** those pending placeholders. Do not invent titles, dates, bullets, skills, or metrics. Keep the two verified outcomes as stated: BBVA 30% reduction and JP Morgan 40% reduction.
+Claims are limited to resume-verified facts. Missing titles, dates, bullets, story bodies, metric context, and the source list render as **Resume content pending / FROM RESUME**.
+
+A later resume paste replaces **only** those placeholders. Do not invent titles, dates, bullets, skills, or metrics. Keep the two verified outcomes as stated: BBVA 30% reduction and JP Morgan 40% reduction.
 
 ## Contact
 
@@ -31,17 +48,14 @@ public/assets/profile.png
 public/assets/profile.webp
 ```
 
-Then point the site at it in `src/lib/portfolio.ts`:
+Then point the site at it in `src/lib/portfolio.ts` (`photoCandidates`, using `import.meta.env.BASE_URL`) and rebuild so `docs/` updates.
 
-```ts
-photoCandidates: ["/assets/profile.jpg", "/assets/profile.svg"],
-```
+Keep `profile.svg` last as the initials fallback.
 
-Keep `profile.svg` last as the initials fallback. The hero tries candidates in order and falls back to drawn initials if none load.
-
-## Run locally
+## Local
 
 ```
 npm ci
-npm run dev
+npm run dev      # preview at / and /raj-basavaraju/
+npm run build    # writes docs/
 ```

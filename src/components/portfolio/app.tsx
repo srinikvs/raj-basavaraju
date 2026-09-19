@@ -80,9 +80,7 @@ export function PortfolioApp() {
   return (
     <div className="min-h-screen bg-page text-ink">
       <main className="mx-auto w-full max-w-page px-4 py-8 sm:px-5">
-        {tab === "overview" ? (
-          <Hero onResume={() => setResumeOpen(true)} onContact={() => activate("contact")} />
-        ) : null}
+        {tab === "overview" ? <Hero onResume={() => setResumeOpen(true)} /> : null}
 
         <div id="tabs-shell">
           <TabBar active={tab} onChange={(id) => activate(id)} />
