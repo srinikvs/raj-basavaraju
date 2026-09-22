@@ -185,7 +185,7 @@ export const ROLES = [
     place: "JPMorgan",
     dates: "May 2005–Sept 2010",
     pills: ["IAM"] as const,
-    highlights: [] as const,
+    highlights: ["Enterprise identity provisioning / birthright access."],
   },
 ] as const;
 
