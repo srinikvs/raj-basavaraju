@@ -23,12 +23,12 @@ export const PROFILE = {
   positioning:
     "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA.",
   summary:
-    "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA. Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present. AD, Entra ID, source/app onboarding, JML, access profiles, entitlements, RBAC/ABAC, certifications, SoD, access requests, provisioning, workflows, transforms, rules, REST, SCIM, JDBC, SQL, testing/RCA.",
+    "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA. Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present. AD, Entra ID, source/app onboarding, JML, reconciliation, RBAC baseline permissions, access profiles, entitlements, RBAC/ABAC, certifications, SoD, access requests, provisioning, workflows, transforms, rules, REST, SCIM, JDBC, SQL, testing/RCA.",
   email: "cy.rs@yahoo.com",
   phone: "+1-716-471-7777",
   linkedin: "https://www.linkedin.com/in/raj-iam-etl-dwh",
   photoCandidates: [`${import.meta.env.BASE_URL}assets/profile.svg`],
-  tags: ["SailPoint ISC", "SailPoint IIQ", "IGA", "18+ years IT"],
+  tags: ["SailPoint ISC (hands-on)", "JML", "reconciliation", "RBAC baseline permissions", "IGA"],
 } as const;
 
 export const EXPLORE = [
@@ -52,7 +52,7 @@ export const EXPLORE = [
     tab: "learning" as TabId,
     tone: "accent" as LaneTone,
     title: "Learning",
-    copy: "IdentityNow certification. GRC/PCI certification from Baxter Clewis. SAFe POPM. B.Sc., Mysore, 2004.",
+    copy: "SailPoint ISC (hands-on). Cybersecurity Specialist GRC/PCI-DSS (Baxter Clewis). SAFe POPM. B.Sc. Computer Science, University of Mysore, 2004.",
     cta: "View credentials",
     target: "learning-title",
   },
@@ -60,7 +60,7 @@ export const EXPLORE = [
     tab: "practice" as TabId,
     tone: "join" as LaneTone,
     title: "Practice",
-    copy: "SailPoint IIQ/ISC and resume-listed IAM capabilities.",
+    copy: "SailPoint IIQ/ISC, JML, reconciliation, RBAC baseline permissions, and resume-listed IAM capabilities.",
     cta: "View skills",
     target: "practice-title",
   },
@@ -84,7 +84,8 @@ export const STORIES = [
     points: [
       "ISC identity lifecycle, governance, and provisioning",
       "Onboard AD, Entra, Workday, Salesforce, SCIM, JDBC, REST",
-      "Identity profiles, correlation, JML",
+      "Identity profiles, correlation, JML, reconciliation",
+      "RBAC baseline permissions",
       "Workflows, transforms, rules, APIs, JSONPath, event triggers, webhooks",
     ],
     ctaTab: "practice" as TabId,
@@ -132,7 +133,8 @@ export const ROLES = [
     highlights: [
       "ISC identity lifecycle, governance, and provisioning (IIQ 2021–22 · ISC 2023–present).",
       "Onboard AD, Entra, Workday, Salesforce, SCIM, JDBC, and REST.",
-      "Identity profiles, correlation, and JML; entitlements, access profiles, and roles (RBAC/ABAC).",
+      "Identity profiles, correlation, JML, and reconciliation; entitlements, access profiles, and roles (RBAC/ABAC).",
+      "RBAC baseline permissions.",
       "Certifications, SoD, and governance groups; access request and approval.",
       "Workflows, transforms, rules, APIs, JSONPath, event triggers, and webhooks.",
       "SQL RCA and end-to-end IAM validation; partner with app owners and security.",
@@ -180,12 +182,12 @@ export const ROLES = [
 ] as const;
 
 export const CERTIFICATIONS = [
-  "IdentityNow certification",
-  "GRC/PCI certification from Baxter Clewis",
+  "SailPoint ISC (hands-on)",
+  "Cybersecurity Specialist GRC/PCI-DSS (Baxter Clewis)",
   "SAFe POPM",
 ] as const;
 
-export const EDUCATION = ["B.Sc., Mysore, 2004"] as const;
+export const EDUCATION = ["B.Sc. Computer Science, University of Mysore, 2004"] as const;
 
 export const SKILLS = [
   {
@@ -194,6 +196,7 @@ export const SKILLS = [
     items: [
       "SailPoint IIQ",
       "SailPoint ISC",
+      "SailPoint ISC (hands-on)",
       "source/app onboarding",
       "identity profiles",
       "correlation",
@@ -216,9 +219,11 @@ export const SKILLS = [
       "risk/compliance",
       "IGA",
       "JML",
+      "reconciliation",
       "access profiles",
       "entitlements",
       "RBAC/ABAC",
+      "RBAC baseline permissions",
       "certifications",
       "SoD",
       "governance groups",

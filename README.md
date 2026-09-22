@@ -25,7 +25,9 @@ Later this can move to Raj’s own user site (`username.github.io`) by changing 
 
 Claims are limited to resume-verified facts. Missing titles, dates, bullets, story bodies, metric context, and the source list render as **Resume content pending / FROM RESUME**.
 
-A later resume paste replaces **only** those placeholders. Do not invent titles, dates, bullets, skills, or metrics. Numeric outcomes such as BBVA 30% reduction and JP Morgan 40% reduction are **not** in the resume and must not appear.
+Filled from later resume paste: JML, reconciliation, RBAC baseline permissions; certs SailPoint ISC (hands-on), Cybersecurity Specialist GRC/PCI-DSS (Baxter Clewis), SAFe POPM; B.Sc. Computer Science, University of Mysore, 2004.
+
+A later resume paste replaces **only** remaining placeholders. Do not invent titles, dates, bullets, skills, or metrics. Numeric outcomes such as BBVA 30% reduction and JP Morgan 40% reduction are **not** in the resume and must not appear.
 
 ## Contact
 
