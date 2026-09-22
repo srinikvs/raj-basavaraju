@@ -44,7 +44,7 @@ export const EXPLORE = [
     tab: "experience" as TabId,
     tone: "review" as LaneTone,
     title: "Experience",
-    copy: "GDIT – CDC.gov, BBVA Compass, M&T Bank, Fifth Third, JP Morgan.",
+    copy: "GDIT – CDC.gov, BBVA Compass, M&T Bank, Fifth Third, JPMorgan.",
     cta: "View roles",
     target: "roles-title",
   },
@@ -180,12 +180,12 @@ export const ROLES = [
   },
   {
     id: "role-jpm",
-    kicker: TODO,
-    title: TODO,
-    place: "JP Morgan",
-    dates: TODO,
-    pills: [] as const,
-    highlights: [TODO],
+    kicker: "Bangalore",
+    title: "IAM Security Access Controller",
+    place: "JPMorgan",
+    dates: "May 2005–Sept 2010",
+    pills: ["IAM"] as const,
+    highlights: [] as const,
   },
 ] as const;
 
