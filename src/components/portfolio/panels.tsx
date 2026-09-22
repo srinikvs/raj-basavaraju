@@ -2,7 +2,6 @@ import {
   CERTIFICATIONS,
   EDUCATION,
   EXPLORE,
-  METRICS,
   PROFILE,
   ROLES,
   SKILLS,
@@ -60,8 +59,7 @@ export function ImpactPanel({ onNavigate }: { onNavigate: Nav }) {
       <Surface>
         <SectionTitle id="impact-title">Identity Impact</SectionTitle>
         <SectionIntro>
-          SailPoint ISC work, including 8+ source integrations. Outcomes are limited to figures
-          stated on the resume.
+          Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present.
         </SectionIntro>
         <div className="grid gap-3">
           {STORIES.map((story) => (
@@ -93,58 +91,13 @@ export function ImpactPanel({ onNavigate }: { onNavigate: Nav }) {
   );
 }
 
-export function MetricsPanel({ onNavigate }: { onNavigate: Nav }) {
-  return (
-    <div className="tab-enter">
-      <Surface>
-        <SectionTitle id="metrics-title">Program metrics</SectionTitle>
-        <SectionIntro>
-          The only numeric outcomes taken from the resume. Context and wording for each reduction
-          are marked until the resume line is available.
-        </SectionIntro>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {METRICS.map((metric) => (
-            <article
-              key={metric.id}
-              id={metric.id}
-              className="flex min-h-[150px] scroll-mt-24 flex-col rounded-md bg-inset px-4 py-4 ring-1 ring-border"
-            >
-              <div className="mb-2 text-[11px] font-semibold tracking-[0.12em] text-muted uppercase">
-                {metric.label}
-              </div>
-              <div className="mb-1 font-display text-[clamp(1.7rem,3.5vw,2.2rem)] leading-none font-semibold tracking-[-0.04em] text-ink tabular-nums">
-                {metric.value}
-              </div>
-              <p className="m-0 text-sm font-medium text-ink">{metric.note}</p>
-              <div className="mt-3">
-                {isTodo(metric.context) ? (
-                  <TodoFlag detail="context / wording" />
-                ) : (
-                  <p className="m-0 text-xs leading-relaxed text-muted">{metric.context}</p>
-                )}
-              </div>
-              <button
-                type="button"
-                onClick={() => onNavigate("impact", metric.story)}
-                className="mt-auto self-start pt-3 text-xs font-semibold text-accent hover:underline"
-              >
-                View source story →
-              </button>
-            </article>
-          ))}
-        </div>
-      </Surface>
-    </div>
-  );
-}
-
 export function ExperiencePanel() {
   return (
     <div className="tab-enter">
       <Surface>
         <SectionTitle id="roles-title">Experience</SectionTitle>
         <SectionIntro>
-          GDIT / CDC through BBVA, M&T, Fifth Third, and JP Morgan. Titles, dates, and bullets that
+          GDIT – CDC.gov through BBVA Compass, M&T, Fifth Third, and JP Morgan. Titles, dates, and bullets that
           are not on the resume source are marked.
         </SectionIntro>
         <div className="grid gap-3">
@@ -223,7 +176,7 @@ export function PracticePanel() {
       <Surface>
         <SectionTitle id="practice-title">Practice</SectionTitle>
         <SectionIntro>
-          SailPoint ISC first, then resume-listed capabilities and integrations only.
+          SailPoint IIQ/ISC first, then resume-listed capabilities only.
         </SectionIntro>
         <div className="grid gap-3 sm:grid-cols-2">
           {SKILLS.map((group) => (

@@ -1,6 +1,6 @@
 # Rajashekara Basavaraju — identity portfolio
 
-Static GitHub Pages site for Raj (IAM / SailPoint ISC specialist, Atlanta, GA).
+Static GitHub Pages site for Raj (Senior IAM / SailPoint Engineer, Atlanta, GA).
 
 Live URL: [https://srinikvs.github.io/raj-basavaraju/](https://srinikvs.github.io/raj-basavaraju/)
 
@@ -25,7 +25,7 @@ Later this can move to Raj’s own user site (`username.github.io`) by changing 
 
 Claims are limited to resume-verified facts. Missing titles, dates, bullets, story bodies, metric context, and the source list render as **Resume content pending / FROM RESUME**.
 
-A later resume paste replaces **only** those placeholders. Do not invent titles, dates, bullets, skills, or metrics. Keep the two verified outcomes as stated: BBVA 30% reduction and JP Morgan 40% reduction.
+A later resume paste replaces **only** those placeholders. Do not invent titles, dates, bullets, skills, or metrics. Numeric outcomes such as BBVA 30% reduction and JP Morgan 40% reduction are **not** in the resume and must not appear.
 
 ## Contact
 

@@ -3,7 +3,6 @@ export const TODO = "Resume content pending / FROM RESUME";
 export const TABS = [
   { id: "overview", label: "Overview" },
   { id: "impact", label: "Identity Impact" },
-  { id: "metrics", label: "Metrics" },
   { id: "experience", label: "Experience" },
   { id: "learning", label: "Learning" },
   { id: "practice", label: "Practice" },
@@ -19,17 +18,17 @@ export const PROFILE = {
   shortName: "Raj",
   initials: "RB",
   eyebrow: "Identity portfolio",
-  role: "IAM / SailPoint ISC specialist",
+  role: "Senior IAM / SailPoint Engineer",
   location: "Atlanta, GA",
   positioning:
-    "IAM / SailPoint ISC specialist. SailPoint ISC work, including 8+ source integrations.",
+    "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA.",
   summary:
-    "Experience spans GDIT / CDC, BBVA, M&T, Fifth Third, and JP Morgan. SailPoint ISC work includes 8+ source integrations.",
+    "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA. Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present. AD, Entra ID, source/app onboarding, JML, access profiles, entitlements, RBAC/ABAC, certifications, SoD, access requests, provisioning, workflows, transforms, rules, REST, SCIM, JDBC, SQL, testing/RCA.",
   email: "cy.rs@yahoo.com",
   phone: "+1-716-471-7777",
   linkedin: "https://www.linkedin.com/in/raj-iam-etl-dwh",
   photoCandidates: [`${import.meta.env.BASE_URL}assets/profile.svg`],
-  tags: ["SailPoint ISC", "IdentityNow certification", "8+ source integrations", "SAFe POPM"],
+  tags: ["SailPoint ISC", "SailPoint IIQ", "IGA", "18+ years IT"],
 } as const;
 
 export const EXPLORE = [
@@ -37,23 +36,15 @@ export const EXPLORE = [
     tab: "impact" as TabId,
     tone: "join" as LaneTone,
     title: "Identity Impact",
-    copy: "SailPoint ISC work, 8+ source integrations, and the two resume-verified outcomes.",
+    copy: "Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present.",
     cta: "View impact",
     target: "impact-title",
-  },
-  {
-    tab: "metrics" as TabId,
-    tone: "move" as LaneTone,
-    title: "Metrics",
-    copy: "BBVA 30% reduction. JP Morgan 40% reduction.",
-    cta: "View metrics",
-    target: "metrics-title",
   },
   {
     tab: "experience" as TabId,
     tone: "review" as LaneTone,
     title: "Experience",
-    copy: "GDIT / CDC, BBVA, M&T, Fifth Third, JP Morgan.",
+    copy: "GDIT – CDC.gov, BBVA Compass, M&T, Fifth Third, JP Morgan.",
     cta: "View roles",
     target: "roles-title",
   },
@@ -69,7 +60,7 @@ export const EXPLORE = [
     tab: "practice" as TabId,
     tone: "join" as LaneTone,
     title: "Practice",
-    copy: "SailPoint ISC and resume-listed capabilities and integrations.",
+    copy: "SailPoint IIQ/ISC and resume-listed IAM capabilities.",
     cta: "View skills",
     target: "practice-title",
   },
@@ -88,85 +79,76 @@ export const STORIES = [
     id: "story-isc",
     tone: "accent" as LaneTone,
     title: "SailPoint ISC",
-    lede: "Resume-listed SailPoint ISC work.",
-    body: TODO,
-    points: [TODO],
+    lede: "Hands-on SailPoint at GDIT/CDC: ISC 2023–present.",
+    body: "Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present.",
+    points: [
+      "ISC identity lifecycle, governance, and provisioning",
+      "Onboard AD, Entra, Workday, Salesforce, SCIM, JDBC, REST",
+      "Identity profiles, correlation, JML",
+      "Workflows, transforms, rules, APIs, JSONPath, event triggers, webhooks",
+    ],
     ctaTab: "practice" as TabId,
-    ctaTarget: "practice-title",
+    ctaTarget: "skill-sailpoint",
     cta: "View skills",
   },
   {
-    id: "story-sources",
+    id: "story-iiq",
     tone: "join" as LaneTone,
-    title: "8+ source integrations",
-    lede: "Resume-listed SailPoint ISC work includes 8+ source integrations.",
-    body: TODO,
-    points: [TODO],
-    ctaTab: "practice" as TabId,
-    ctaTarget: "skill-integrations",
-    cta: "View integrations",
+    title: "SailPoint IIQ",
+    lede: "Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022.",
+    body: "Hands-on SailPoint at GDIT/CDC: IIQ 2021–2022 and ISC 2023–present.",
+    points: ["provisioning", "certifications", "SoD", "access requests", "RBAC/ABAC"],
+    ctaTab: "experience" as TabId,
+    ctaTarget: "role-gdit",
+    cta: "View GDIT – CDC.gov",
   },
   {
-    id: "story-bbva",
+    id: "story-iga",
     tone: "move" as LaneTone,
-    title: "BBVA — 30% reduction",
-    lede: "Verified resume outcome: BBVA 30% reduction.",
-    body: TODO,
-    points: [TODO],
-    ctaTab: "metrics" as TabId,
-    ctaTarget: "metric-bbva",
-    cta: "View metric",
-  },
-  {
-    id: "story-jpm",
-    tone: "review" as LaneTone,
-    title: "JP Morgan — 40% reduction",
-    lede: "Verified resume outcome: JP Morgan 40% reduction.",
-    body: TODO,
-    points: [TODO],
-    ctaTab: "metrics" as TabId,
-    ctaTarget: "metric-jpm",
-    cta: "View metric",
-  },
-] as const;
-
-export const METRICS = [
-  {
-    id: "metric-bbva",
-    label: "BBVA",
-    value: "30%",
-    note: "reduction",
-    context: TODO,
-    story: "story-bbva",
-  },
-  {
-    id: "metric-jpm",
-    label: "JP Morgan",
-    value: "40%",
-    note: "reduction",
-    context: TODO,
-    story: "story-jpm",
+    title: "18+ years IT",
+    lede: "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA.",
+    body: "Senior IAM with 18+ years IT spanning identity provisioning, access governance, auth security, risk/compliance, and IGA.",
+    points: [
+      "identity provisioning",
+      "access governance",
+      "auth security",
+      "risk/compliance",
+      "IGA",
+    ],
+    ctaTab: "practice" as TabId,
+    ctaTarget: "skill-iga",
+    cta: "View capabilities",
   },
 ] as const;
 
 export const ROLES = [
   {
     id: "role-gdit",
-    kicker: TODO,
-    title: TODO,
-    place: "GDIT / CDC",
-    dates: TODO,
-    pills: ["SailPoint ISC"] as const,
-    highlights: [TODO],
+    kicker: "Atlanta",
+    title: "Senior IAM / SailPoint Engineer",
+    place: "GDIT – CDC.gov",
+    dates: "Sept 2015–Present",
+    pills: ["IIQ 2021–22", "ISC 2023–present"] as const,
+    highlights: [
+      "ISC identity lifecycle, governance, and provisioning (IIQ 2021–22 · ISC 2023–present).",
+      "Onboard AD, Entra, Workday, Salesforce, SCIM, JDBC, and REST.",
+      "Identity profiles, correlation, and JML; entitlements, access profiles, and roles (RBAC/ABAC).",
+      "Certifications, SoD, and governance groups; access request and approval.",
+      "Workflows, transforms, rules, APIs, JSONPath, event triggers, and webhooks.",
+      "SQL RCA and end-to-end IAM validation; partner with app owners and security.",
+    ],
   },
   {
     id: "role-bbva",
-    kicker: TODO,
-    title: TODO,
-    place: "BBVA",
-    dates: TODO,
-    pills: ["30% reduction"] as const,
-    highlights: ["30% reduction", TODO],
+    kicker: "Birmingham",
+    title: "IAM Governance & Compliance Lead / Salesforce CRM & Siebel",
+    place: "BBVA Compass",
+    dates: "Mar 2014–Sept 2015",
+    pills: ["Salesforce CRM", "Siebel"] as const,
+    highlights: [
+      "Access-governance reviews and remediation of inappropriate access.",
+      "Certification tracking and audit evidence for IAM controls.",
+    ],
   },
   {
     id: "role-mt",
@@ -192,8 +174,8 @@ export const ROLES = [
     title: TODO,
     place: "JP Morgan",
     dates: TODO,
-    pills: ["40% reduction"] as const,
-    highlights: ["40% reduction", TODO],
+    pills: [] as const,
+    highlights: [TODO],
   },
 ] as const;
 
@@ -208,13 +190,52 @@ export const EDUCATION = ["B.Sc., Mysore, 2004"] as const;
 export const SKILLS = [
   {
     id: "skill-sailpoint",
-    title: "SailPoint ISC",
-    items: ["SailPoint ISC", "IdentityNow certification"],
+    title: "SailPoint",
+    items: [
+      "SailPoint IIQ",
+      "SailPoint ISC",
+      "source/app onboarding",
+      "identity profiles",
+      "correlation",
+      "workflows",
+      "transforms",
+      "rules",
+      "APIs",
+      "JSONPath",
+      "event triggers",
+      "webhooks",
+    ],
   },
   {
-    id: "skill-integrations",
-    title: "Integrations",
-    items: ["8+ source integrations", TODO],
+    id: "skill-iga",
+    title: "IGA / access",
+    items: [
+      "identity provisioning",
+      "access governance",
+      "auth security",
+      "risk/compliance",
+      "IGA",
+      "JML",
+      "access profiles",
+      "entitlements",
+      "RBAC/ABAC",
+      "certifications",
+      "SoD",
+      "governance groups",
+      "access requests",
+      "access request/approval",
+      "provisioning",
+    ],
+  },
+  {
+    id: "skill-directories",
+    title: "Directories & protocols",
+    items: ["AD", "Entra ID", "Workday", "Salesforce", "Salesforce CRM", "Siebel", "REST", "SCIM", "JDBC", "SQL"],
+  },
+  {
+    id: "skill-quality",
+    title: "Delivery",
+    items: ["testing/RCA", "SQL RCA", "end-to-end IAM validation"],
   },
 ] as const;
 
@@ -228,11 +249,9 @@ export function isTabId(value: string): value is TabId {
 
 export function tabForTarget(targetId: string): TabId | null {
   if (STORIES.some((story) => story.id === targetId)) return "impact";
-  if (METRICS.some((metric) => metric.id === targetId)) return "metrics";
   if (ROLES.some((role) => role.id === targetId)) return "experience";
-  if (targetId === "skill-integrations" || targetId === "skill-sailpoint") return "practice";
+  if (targetId.startsWith("skill-")) return "practice";
   if (targetId === "impact-title") return "impact";
-  if (targetId === "metrics-title") return "metrics";
   if (targetId === "roles-title") return "experience";
   if (targetId === "learning-title") return "learning";
   if (targetId === "practice-title") return "practice";

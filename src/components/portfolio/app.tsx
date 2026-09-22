@@ -6,7 +6,6 @@ import {
   ExperiencePanel,
   ImpactPanel,
   LearningPanel,
-  MetricsPanel,
   OverviewPanel,
   PracticePanel,
 } from "./panels";
@@ -93,7 +92,6 @@ export function PortfolioApp() {
         >
           {tab === "overview" ? <OverviewPanel onNavigate={activate} /> : null}
           {tab === "impact" ? <ImpactPanel onNavigate={activate} /> : null}
-          {tab === "metrics" ? <MetricsPanel onNavigate={activate} /> : null}
           {tab === "experience" ? <ExperiencePanel /> : null}
           {tab === "learning" ? <LearningPanel /> : null}
           {tab === "practice" ? <PracticePanel /> : null}
