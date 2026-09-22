@@ -175,6 +175,7 @@ export const ROLES = [
       "Assessed app behavior vs security/business controls; identified gaps.",
       "Worked with tech/business/security on coverage, failures, and corrective actions.",
       "Maintained security/compliance documentation and audit evidence.",
+      "Structured testing to confirm authz/authn controls.",
     ],
   },
   {
