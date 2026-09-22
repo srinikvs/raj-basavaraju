@@ -170,7 +170,9 @@ export const ROLES = [
     place: "Fifth Third",
     dates: "Oct 2010–Apr 2013",
     pills: ["Risk & Compliance"] as const,
-    highlights: [] as const,
+    highlights: [
+      "Led system risk/compliance on authentication and access-control across banking apps.",
+    ],
   },
   {
     id: "role-jpm",
