@@ -174,6 +174,7 @@ export const ROLES = [
       "Led system risk/compliance on authentication and access-control across banking apps.",
       "Assessed app behavior vs security/business controls; identified gaps.",
       "Worked with tech/business/security on coverage, failures, and corrective actions.",
+      "Maintained security/compliance documentation and audit evidence.",
     ],
   },
   {
