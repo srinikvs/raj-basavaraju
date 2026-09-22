@@ -165,12 +165,12 @@ export const ROLES = [
   },
   {
     id: "role-fifth",
-    kicker: TODO,
-    title: TODO,
+    kicker: "Bangalore",
+    title: "Lead System Risk & Compliance Specialist",
     place: "Fifth Third",
-    dates: TODO,
-    pills: [] as const,
-    highlights: [TODO],
+    dates: "Oct 2010–Apr 2013",
+    pills: ["Risk & Compliance"] as const,
+    highlights: [] as const,
   },
   {
     id: "role-jpm",
