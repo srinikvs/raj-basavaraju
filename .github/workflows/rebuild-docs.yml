@@ -1,0 +1,33 @@
+name: Rebuild docs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: npm install
+      - run: npm run build
+      - name: Commit docs only
+        run: |
+          git config user.name srinikvs
+          git config user.email srini.kvs@gmail.com
+          git checkout -B docs/vite-rebuild
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No docs changes"
+            exit 0
+          fi
+          git commit -m "Rebuild docs/ for Pages after resume fill"
+          git push origin docs/vite-rebuild
