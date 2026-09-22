@@ -184,10 +184,11 @@ export const ROLES = [
     title: "IAM Security Access Controller",
     place: "JPMorgan",
     dates: "May 2005–Sept 2010",
-    pills: ["IAM", "AACT"] as const,
+    pills: ["IAM", "AACT", "IBM/Lotus"] as const,
     highlights: [
       "Enterprise identity provisioning / birthright access.",
       "Processed access requests via AACT; validated and provisioned.",
+      "Managed access across IBM/Lotus-connected apps.",
     ],
   },
 ] as const;
