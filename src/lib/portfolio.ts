@@ -160,6 +160,7 @@ export const ROLES = [
     highlights: [
       "Supported RSA Adaptive Auth as extra security layer for customer banking apps.",
       "Validated auth/access workflows across online/mobile/desktop channels.",
+      "Security-control docs/evidence for compliance/audit.",
     ],
   },
   {
