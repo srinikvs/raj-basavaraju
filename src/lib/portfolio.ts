@@ -184,12 +184,13 @@ export const ROLES = [
     title: "IAM Security Access Controller",
     place: "JPMorgan",
     dates: "May 2005–Sept 2010",
-    pills: ["IAM", "AACT", "IBM/Lotus", "JML"] as const,
+    pills: ["IAM", "AACT", "IBM/Lotus", "JML", "RBAC"] as const,
     highlights: [
       "Enterprise identity provisioning / birthright access.",
       "Processed access requests via AACT; validated and provisioned.",
       "Managed access across IBM/Lotus-connected apps.",
       "Supported JML (create/modify/remove).",
+      "Access reconciliation; RBAC baseline permissions; investigated discrepancies.",
     ],
   },
 ] as const;
