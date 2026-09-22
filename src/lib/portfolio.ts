@@ -52,7 +52,7 @@ export const EXPLORE = [
     tab: "learning" as TabId,
     tone: "accent" as LaneTone,
     title: "Learning",
-    copy: "IdentityNow certification. GRC/PCI certification from Baxter Clewis. SAFe POPM. B.Sc., Mysore, 2004.",
+    copy: "SailPoint ISC (hands-on). Cybersecurity Specialist GRC/PCI-DSS (Baxter Clewis). SAFe POPM. B.Sc. Computer Science, University of Mysore, 2004.",
     cta: "View credentials",
     target: "learning-title",
   },
@@ -116,7 +116,7 @@ export const STORIES = [
       "IGA",
     ],
     ctaTab: "practice" as TabId,
-    ctaTarget: "skill-iga",
+    ctaTarget: "skill-lifecycle",
     cta: "View capabilities",
   },
 ] as const;
@@ -180,62 +180,53 @@ export const ROLES = [
 ] as const;
 
 export const CERTIFICATIONS = [
-  "IdentityNow certification",
-  "GRC/PCI certification from Baxter Clewis",
+  "SailPoint ISC (hands-on)",
+  "Cybersecurity Specialist GRC/PCI-DSS (Baxter Clewis)",
   "SAFe POPM",
 ] as const;
 
-export const EDUCATION = ["B.Sc., Mysore, 2004"] as const;
+export const EDUCATION = ["B.Sc. Computer Science, University of Mysore, 2004"] as const;
 
 export const SKILLS = [
   {
     id: "skill-sailpoint",
     title: "SailPoint",
-    items: [
-      "SailPoint IIQ",
-      "SailPoint ISC",
-      "source/app onboarding",
-      "identity profiles",
-      "correlation",
-      "workflows",
-      "transforms",
-      "rules",
-      "APIs",
-      "JSONPath",
-      "event triggers",
-      "webhooks",
-    ],
+    items: ["ISC", "IIQ", "certifications", "SoD"],
   },
   {
-    id: "skill-iga",
-    title: "IGA / access",
-    items: [
-      "identity provisioning",
-      "access governance",
-      "auth security",
-      "risk/compliance",
-      "IGA",
-      "JML",
-      "access profiles",
-      "entitlements",
-      "RBAC/ABAC",
-      "certifications",
-      "SoD",
-      "governance groups",
-      "access requests",
-      "access request/approval",
-      "provisioning",
-    ],
+    id: "skill-lifecycle",
+    title: "Identity Lifecycle",
+    items: ["JML", "profiles", "birthright", "provisioning", "access requests"],
+  },
+  {
+    id: "skill-access-model",
+    title: "Access Model",
+    items: ["entitlements", "access profiles", "roles", "RBAC", "ABAC"],
   },
   {
     id: "skill-directories",
-    title: "Directories & protocols",
-    items: ["AD", "Entra ID", "Workday", "Salesforce", "Salesforce CRM", "Siebel", "REST", "SCIM", "JDBC", "SQL"],
+    title: "Directories & Connectors",
+    items: ["AD", "Entra ID", "Workday", "Salesforce", "Siebel", "SCIM 2.0", "JDBC", "REST"],
   },
   {
-    id: "skill-quality",
-    title: "Delivery",
-    items: ["testing/RCA", "SQL RCA", "end-to-end IAM validation"],
+    id: "skill-engineering",
+    title: "Engineering",
+    items: ["REST APIs", "JSON/JSONPath", "workflows", "transforms", "rules", "event triggers", "webhooks"],
+  },
+  {
+    id: "skill-auth",
+    title: "Auth & Security",
+    items: ["RSA Adaptive Auth", "MFA", "federation", "privileged access monitoring"],
+  },
+  {
+    id: "skill-data",
+    title: "Data/Validation",
+    items: ["SQL", "IAM testing", "reconciliation", "RCA"],
+  },
+  {
+    id: "skill-governance",
+    title: "Governance",
+    items: ["access reviews", "PCI DSS", "NIST", "audit evidence"],
   },
 ] as const;
 

@@ -23,7 +23,7 @@ Later this can move to Raj’s own user site (`username.github.io`) by changing 
 
 ## Resume content (follow-up input)
 
-Claims are limited to resume-verified facts. Missing titles, dates, bullets, story bodies, metric context, and the source list render as **Resume content pending / FROM RESUME**.
+Claims are limited to resume-verified facts. Missing titles, dates, bullets, story bodies, and remaining roles render as **Resume content pending / FROM RESUME**.
 
 A later resume paste replaces **only** those placeholders. Do not invent titles, dates, bullets, skills, or metrics. Numeric outcomes such as BBVA 30% reduction and JP Morgan 40% reduction are **not** in the resume and must not appear.
 
