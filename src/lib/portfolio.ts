@@ -172,6 +172,7 @@ export const ROLES = [
     pills: ["Risk & Compliance"] as const,
     highlights: [
       "Led system risk/compliance on authentication and access-control across banking apps.",
+      "Assessed app behavior vs security/business controls; identified gaps.",
     ],
   },
   {
